@@ -1,6 +1,6 @@
 name: Groetjes
 
-on: [pull_request_target, issues, push]
+on: [pull_request_target, issues]
 
 jobs:
   greeting:
@@ -14,4 +14,3 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: "Ein Issue - wie toll!"
           pr-message: "Hey, Du hast einen pull request gemacht. Mega cool!"
-          push-message: "Super - ein push request!"
